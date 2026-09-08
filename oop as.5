@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+int registration_id;
+string name;
+int age;
+string course;
+
+student(int registration_id,  string name, int age, string course)
+{
+this->registration_id=registration_id;
+this->name=name;
+this->age=age;
+this->course=course;
+}
+void display()
+{
+cout<<"registration_id: "<<this->registration_id<<endl;
+cout<<"name: "<<this->name<<endl;
+cout<<"age: "<<this->age<<endl;
+cout<<"course: "<<this->course<<endl;
+}
+};
+int main()
+{
+student s1(2357, "piyushh", 17, "CS");
+s1.display();
+return 0;
+}
