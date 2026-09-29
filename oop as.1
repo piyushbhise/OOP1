@@ -3,45 +3,33 @@ using namespace std;
 class book
 {
 public:
- int id;
- string Name;
- float Price;
- string Language;
+int id;
+float price;
 
+void input()
+{
+cout<<"ENTER BOOK ID: "<<endl;
+cin>>id;
 
+cout<<"ENTER BOOK PRICE: "<<endl;
+cin>>price;
+}
 void display()
 {
- cout<<"ID of the Book:";
- cin>>id;
-
- cout<<"Name of the Book:";
- cin>>Name;
-
- cout<<"Price of the Book is:";
- cin>>Price;
-
- cout<<"Language of the Book:";
- cin>>Language;
-
+cout<<"BOOK ID IS : " << id << endl;
+cout<<"BOOK PRICE IS : " << price << endl;
 }
+
 };
- int main()
+int main()
 {
+book b1,b2;
 
- book b1;
- book b2;
+b1.input();
+b1.display();
 
- b1.id;
- b1.Name;
- b1.Price;
- b1.Language;
- b1.display();
+b2.input();
+b2.display();
 
- b2.id;
- b2.Name;
- b2.Price;
- b2.Language;
- b2.display();
-
- return 0;
+return 0;
 }
