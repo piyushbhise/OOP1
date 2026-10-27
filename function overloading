@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class result
+{
+public:
+void calcuavg(int m1,int m2)
+{
+cout<<"ROLL NO AND MARKS: "<<m1<<m2<<endl;
+}
+void calcuavg(int m1,int m2,int m3)
+{
+cout<<"MARKS ,ROLL NO AND DIVISION: "<<m1<<m2<<m3<<endl;
+}
+void calcuavg(float a1,float a2)
+{
+cout<<"MARKS AND PERCENTAGE: "<<a1<<a2<<endl;
+}
+};
+int main()
+{
+result r1;
+r1.calcuavg(98,95);
+r1.calcuavg(87,67,001);
+r1.calcuavg(86,97);
+return 0;
+}
+
+
